@@ -1,0 +1,9 @@
+<div class="box">
+
+    <div id="fact"></div>
+
+    <div id="button">
+        <button type="button" id="btnFact" class="btn btn-warning btn-lg">Get Fact!</button>
+    </div>
+
+</div>
