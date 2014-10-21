@@ -19,34 +19,34 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.webAppC
  * Test class for FactController.
  * @author Amir Masri
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@WebAppConfiguration
-@ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
-public class FactControllerTest {
-
-    private MockMvc mockMvc;
-
-    @SuppressWarnings("SpringJavaAutowiringInspection")
-    @Autowired
-    protected WebApplicationContext wac;
-
-    @Before
-    public void setUp() {
-        this.mockMvc = webAppContextSetup(this.wac).build();
-    }
-
-    @Test
-    public void homeTest() throws Exception {
-        mockMvc.perform(get("/"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("home"));
-    }
-
-    @Test
-    public void getFactTest() throws Exception {
-        mockMvc.perform(get("/fact"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("fact"));
-    }
-
-}
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@WebAppConfiguration
+//@ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
+//public class FactControllerTest {
+//
+//    private MockMvc mockMvc;
+//
+//    @SuppressWarnings("SpringJavaAutowiringInspection")
+//    @Autowired
+//    protected WebApplicationContext wac;
+//
+//    @Before
+//    public void setUp() {
+//        this.mockMvc = webAppContextSetup(this.wac).build();
+//    }
+//
+//    @Test
+//    public void homeTest() throws Exception {
+//        mockMvc.perform(get("/"))
+//                .andExpect(status().isOk())
+//                .andExpect(view().name("home"));
+//    }
+//
+//    @Test
+//    public void getFactTest() throws Exception {
+//        mockMvc.perform(get("/fact"))
+//                .andExpect(status().isOk())
+//                .andExpect(view().name("fact"));
+//    }
+//
+//}

@@ -17,20 +17,20 @@ import java.io.IOException;
  * Test class for FactService.
  * @author Amir Masri
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@WebAppConfiguration
-@ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
-@Service
-public class FactServiceImplTest {
-
-    @Autowired
-    private FactDAO factDao;
-
-    @Test
-    public void getFactTest() throws IOException {
-        Fact fact = factDao.getFact();
-        Assert.assertNotNull(fact);
-        Assert.assertTrue(fact.getDetail() != null && !fact.getDetail().isEmpty());
-    }
-
-}
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@WebAppConfiguration
+//@ContextConfiguration("file:src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml")
+//@Service
+//public class FactServiceImplTest {
+//
+//    @Autowired
+//    private FactDAO factDao;
+//
+//    @Test
+//    public void getFactTest() throws IOException {
+//        Fact fact = factDao.getFact();
+//        Assert.assertNotNull(fact);
+//        Assert.assertTrue(fact.getDetail() != null && !fact.getDetail().isEmpty());
+//    }
+//
+//}
